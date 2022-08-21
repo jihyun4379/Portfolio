@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact/contact.css" />
+    <link rel="stylesheet" href="../styles/global-header/global-header.css" />
+    <link rel="stylesheet" href="../styles/global-footer/global-footer.css" />
+  </head>
+  <body>
+    <header class="global-header" id="itsMe">
+      <div class="header-wrapper maxwidth-1440">
+        <a class="logo" href="">
+          <h1>OH</h1>
+        </a>
+        <nav class="nav-bar" id="navBar">
+          <a class="nav-a" href="#home">Home</a>
+          <a class="nav-a" href="#about">About</a>
+          <a class="nav-a" href="#works">works</a>
+          <a class="nav-a" href="#">Contact</a>
+        </nav>
+        <div class="nav-btn-icon" id="navBtnIcon" onclick="navBtnClick()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <p class="title-hire">
+        <span>ready to</span>
+        <span>work</span>
+        <span>with me?</span>
+      </p>
+      <section class="contact-wrapper">
+        <div class="name">
+          <div class="first-name">
+            <label for="contact-first-name">first name*</label>
+            <input type="contact-first-name" />
+          </div>
+          <div class="last-name">
+            <label for="contact-last-name">last name*</label>
+            <input type="contact-last-name" />
+          </div>
+        </div>
+
+        <div class="email">
+          <label for="contact-email">email*</label>
+          <input type="contact-email" />
+        </div>
+        <div class="mobile">
+          <label for="contact-mobile">mobile*</label>
+          <input type="contact-mobile" />
+        </div>
+        <div class="comment">
+          <label for="contact-comment">comment*</label>
+          <textarea name="comment-box" id="comment" rows="5"></textarea>
+        </div>
+        <button class="send-btn" type="button">send</button>
+      </section>
+    </main>
+
+    <footer class="global-footer">
+      <div class="footer-wrapper maxwidth-1440">
+        <ul>
+          <a href="#home">home</a>
+          <a href="#">about</a>
+          <a href="#">works</a>
+          <a href="https://www.erichoonshin.com/">contact</a>
+        </ul>
+        <span>jihyunoh4379@gmail.com</span>
+      </div>
+    </footer>
+    <script src="../scripts/mainScripts/btnAction.js"></script>
+  </body>
+</html>

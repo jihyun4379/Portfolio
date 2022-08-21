@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  word-break: break-all;
+}
+
+html {
+  width: 100%;
+  font-size: 14px;
+}
+
+body {
+  width: inherit;
+  min-height: 100vh;
+}
+
+.maxwidth-1440 {
+  max-width: 1360px;
+  padding: 0 40px;
+  width: 100%;
+}
+
+#gameContainer {
+  text-align: center;
+}
+#gameContainer #gameBoard {
+  margin-top: 100px;
+  border: 7px solid;
+}
+#gameContainer #scoreText {
+  font-size: 100px;
+}
+#gameContainer #resetBtn {
+  font-size: 22px;
+  width: 100px;
+  height: 50px;
+  border: 4px solid;
+  border-radius: 15px;
+  cursor: pointer;
+}/*# sourceMappingURL=pong.css.map */

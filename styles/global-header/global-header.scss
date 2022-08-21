@@ -1,0 +1,92 @@
+header {
+  position: relative;
+  z-index: 9999;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+
+  .header-wrapper {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      h1 {
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+    .nav-bar {
+      display: flex;
+      gap: 40px;
+      font-size: 15px;
+      font-weight: 450;
+      transition: 0.4s ease-in-out;
+
+      a {
+        color: white;
+        text-transform: capitalize;
+
+        &:hover {
+          color: #ff4da6;
+        }
+      }
+    }
+    .nav-btn-icon {
+      position: absolute;
+      right: 40px;
+      width: 40px;
+      height: 40px;
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+
+      display: none;
+      justify-content: center;
+      align-items: center;
+      i {
+        color: white;
+        transition: 0.4s ease-in-out;
+
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header {
+    .header-wrapper {
+      .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        background: white;
+        width: 600px;
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > a {
+          color: black;
+        }
+        &.active {
+          right: 0;
+        }
+      }
+      .nav-btn-icon {
+        display: flex;
+        &.active {
+          i {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

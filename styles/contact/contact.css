@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  word-break: break-all;
+}
+
+html {
+  width: 100%;
+  font-size: 14px;
+}
+
+body {
+  width: inherit;
+  min-height: 100vh;
+}
+
+.maxwidth-1440 {
+  max-width: 1440px;
+  width: 100%;
+}
+
+/* 위는 모든 tag들의 기본적으로 가지고있는 속성을 없에준다. (초기화) */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(250, 249, 248);
+}
+
+main {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main p {
+  margin-top: 180px;
+  line-height: 1.1;
+  font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+main p span {
+  text-align: center;
+  font-size: 100px;
+}
+
+.contact-wrapper {
+  max-width: 640px;
+  width: 100%;
+  margin: 120px 0;
+  font-size: 15px;
+}
+.contact-wrapper .name {
+  gap: 20px;
+  display: flex;
+}
+.contact-wrapper .name > div {
+  width: 50%;
+}
+.contact-wrapper .comment {
+  margin-bottom: 30px;
+}
+.contact-wrapper .name,
+.contact-wrapper .email,
+.contact-wrapper .mobile,
+.contact-wrapper .comment {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-wrapper .name label,
+.contact-wrapper .email label,
+.contact-wrapper .mobile label,
+.contact-wrapper .comment label {
+  display: block;
+  text-transform: uppercase;
+  text-align: left;
+}
+.contact-wrapper .name textarea,
+.contact-wrapper .name input,
+.contact-wrapper .email textarea,
+.contact-wrapper .email input,
+.contact-wrapper .mobile textarea,
+.contact-wrapper .mobile input,
+.contact-wrapper .comment textarea,
+.contact-wrapper .comment input {
+  width: 100%;
+  padding: 10px;
+}
+.contact-wrapper .send-btn {
+  background-color: black;
+  width: 100%;
+  padding: 20px 30px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 0 40px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  gap: 40px;
+  padding: 10px 0;
+  color: white;
+  text-transform: capitalize;
+}
+footer ul a {
+  color: white;
+  text-transform: capitalize;
+}
+footer ul a:hover {
+  color: red;
+}
+footer span {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}/*# sourceMappingURL=contact.css.map */
